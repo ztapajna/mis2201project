@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<!-- ==================================================================================
+     MIS 2201 PHASE 1: PERSONAL WEBSITE - HOME PAGE
+     ==================================================================================
+     
+     FILE: index.html (HOME PAGE)
+     DUE: March 20, 2026, 11:00 AM
+     POINTS: 6 pts (out of 22 pts for Required Pages Content)
+     
+     REQUIREMENTS FOR THIS PAGE:
+     ✓ Professional headshot/picture of yourself
+     ✓ Two hobby summaries with pictures  
+     ✓ Short welcome video (introduce yourself)
+     ✓ Professional introduction paragraph
+     
+     INSTRUCTIONS:
+     1. Read ALL comments in this file - they explain everything!
+     2. Replace ALL placeholder text marked with [BRACKETS]
+     3. Replace ALL placeholder images in the images/ folder with YOUR images
+     4. Replace placeholder video with YOUR welcome video
+     5. Test in browser before submitting
+     
+     ================================================================================== -->
+
+<html lang="en">
+<!-- ==================================================================================
+     HEAD SECTION
+     ================================================================================== 
+     The HEAD contains metadata about your page - info for browsers, not visible to users.
+     ================================================================================== -->
+
+<head>
+    <!-- =============================================================================
+         CHARACTER ENCODING & VIEWPORT
+         Required for proper text display and mobile responsiveness
+         ============================================================================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =============================================================================
+         SEO (Search Engine Optimization) META TAGS
+         These help search engines understand your page
+         ============================================================================= -->
+    <meta name="description" content="Zachary Ťapajna's professional portfolio website - MIS 2201 student at UMD">
+    <meta name="keywords" content="portfolio, web development, UMD, Accounting, Cross Country Skiing, Hiking">
+    <meta name="author" content="Zachary Ťapajna">
+
+    <!-- =============================================================================
+         PAGE TITLE
+         This appears in browser tabs and search results
+         
+         ACTION REQUIRED: Replace [YOUR NAME] with your actual name
+         ============================================================================= -->
+    <title>Zachary Ťapajna - Home | Personal Portfolio</title>
+
+    <!-- =============================================================================
+         LINK TO CSS STYLESHEET
+         External CSS keeps styling separate from HTML (best practice)
+         ============================================================================= -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- ==================================================================================
+     BODY SECTION
+     ================================================================================== 
+     Everything visible on your webpage goes in the BODY
+     ================================================================================== -->
+
+<body>
+
+    <!-- =============================================================================
+         NAVIGATION BAR (6 pts worth of usability)
+         =============================================================================
+         The nav appears on EVERY page - must link to all 4 pages:
+         - index.html (Home - this page)
+         - about.html (About Me)
+         - resume.html (Resume)
+         - discover-umd.html (Discover UMD)
+         
+         The navigation has:
+         - Desktop view: Horizontal menu
+         - Mobile view: Hamburger menu (JavaScript in script.js handles this)
+         ============================================================================= -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Logo/Your Name (links to home) -->
+            <div class="logo">
+                <a href="index.html">
+                    <!-- ACTION REQUIRED: Replace [YOUR NAME] with your actual name -->
+                    Zachary Ťapajna
+                </a>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="discover-umd.html">Discover UMD</a></li>
+                <!-- OPTIONAL: If you do the extra credit game page, add link here -->
+                <!-- <li><a href="game.html">Game</a></li> -->
+            </ul>
+
+            <!-- Hamburger Menu Icon (for mobile - handled by JavaScript) -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =============================================================================
+         HERO SECTION WITH HEADSHOT
+         =============================================================================
+         REQUIRED (Part of 6 pts for Home Page):
+         - Professional headshot/picture of yourself
+         - Welcoming headline
+         - Brief introduction
+         
+         FILE FORMAT NOTES:
+         - Best formats: .jpg (photos), .png (if you want transparency)
+         - Recommended size: 400x400px to 800x800px
+         - Keep file size under 1MB (compress if needed)
+         - Name your file clearly: "your-name-headshot.jpg"
+         
+         TO REPLACE THE PLACEHOLDER IMAGE:
+         1. Take or select a professional photo of yourself
+         2. Save it in the images/ folder  (e.g., "john-smith-headshot.jpg")
+         3. Update the src below to match your filename
+         4. Update the alt text with your actual name
+         ============================================================================= -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- HEADSHOT IMAGE - ACTION REQUIRED -->
+                <img src="images/placeholder-headshot.png" alt="Zachary Ťapajna professional photo" class="headshot">
+                <!-- 
+                    ^^^ REPLACE THIS ^^^
+                    1. Change src="images/placeholder-headshot.png" to your image filename
+                    2. Change alt="[YOUR NAME]..." to your actual name (important for accessibility)
+                 -->
+
+                <!-- WELCOME HEADING - ACTION REQUIRED -->
+                <h1>Hi, I'm Zachary!</h1>
+                <!-- ^^^ CUSTOMIZE THIS - Make it your own! Examples:
+                     "Hi, I'm [Your Name]"
+                     "Welcome to [Your Name]'s Portfolio"
+                     "Building the Future, One Line of Code at a Time"
+                 -->
+
+                <!-- INTRODUCTION PARAGRAPH - ACTION REQUIRED -->
+                <p class="intro">
+                    Hello there, my name is Zachary Ťapajna and I'm a freshman Accounting major at the University of Minnesota Duluth.  
+                    I hope to use what I learn here to help people out in the world.  Welcome to my website!
+        
+
+                    <!-- EXAMPLE (DELETE THIS and write your own):
+                         Hi, I'm Sarah Johnson, a junior majoring in Management Information Systems at the University 
+                         of Minnesota Duluth. I'm passionate about using technology to solve business problems and 
+                         create innovative solutions. Welcome to my portfolio!
+                     -->
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- =============================================================================
+         INTRODUCTION SECTION
+         =============================================================================
+         More detailed introduction - expands on your hero section
+         Tell visitors more about yourself, your goals, and what they'll find on your site
+         ============================================================================= -->
+    <section class="introduction">
+        <div class="container">
+            <h2>About Me</h2>
+            <!-- ACTION REQUIRED: Write 3-5 sentences expanding on your introduction -->
+            <p>
+                My name is Zachary Ťapajna,  I'm originally from Winnipeg, Canada but I grew up in Bloomington, Minnesota.
+                I chose to major in Accounting because I've always been a numbers person, and Accounting is an important
+                role in the business world that involves those frequently!  On this website you'll learn mrre about me, my hobbies,
+                and about UMD!
+            </p>
+        </div>
+    </section>
+
+    <!-- =============================================================================
+         WELCOME VIDEO SECTION
+         =============================================================================
+         REQUIRED (Part of 6 pts for Home Page):
+         - Short welcome video where you introduce yourself
+         - Recommended: 30-60 seconds long
+         - Show your personality! Smile, be confident
+         
+         ============================================================================= 
+         
+         VIDEO EMBEDDING: YOU HAVE 3 OPTIONS
+         Choose the option that works best for you:
+         
+         OPTION 1: YouTube (RECOMMENDED - EASIEST)
+         ==========================================
+         1. Upload your video to YouTube
+         2. Click "Share" → "Embed"
+         3. Copy the iframe code
+         4. Replace the iframe below
+         
+         PROS: Easy, reliable, handles all devices automatically, free hosting
+         CONS: Requires YouTube account, video is public
+         
+         FILE FORMATS for upload: YouTube accepts MP4, MOV, AVI, WMV
+         
+         
+         OPTION 2: Vimeo (GREAT ALTERNATIVE)
+         ====================================
+         1. Upload to Vimeo (vimeo.com)
+         2. Get embed code
+         3. Replace iframe below
+         
+         PROS: Professional looking, good for portfolios, no ads
+         CONS: Free tier has weekly upload limits
+         
+         
+         OPTION 3: Self-Hosted HTML5 Video (ADVANCED)
+         =============================================
+         Host the video file yourself (on GitHub Pages, Netlify, etc.)
+         
+         PROS: Full control, no external platform needed
+         CONS: Larger files slow down your site, browser compatibility issues
+         
+         FILE FORMATS: Use BOTH MP4 and WebM for maximum compatibility
+         - MP4: Works in Chrome, Safari, Edge, Firefox
+         - WebM: Smaller file size, works in modern browsers
+         
+         Recommended specs:
+         - Resolution: 1920x1080 (1080p) or 1280x720 (720p)
+         - Length: 30-60 seconds (keep under 2 minutes)
+         - File size: Under 50MB (compress if needed)
+         - Codec: H.264 for MP4
+         
+         COMPRESSION TOOLS:
+         - HandBrake (free): handbrake.fr
+         - Online: cloudconvert.com, freeconvert.com
+         
+         ============================================================================= -->
+    <section class="welcome-video">
+        <div class="container">
+            <h2>Introduction Video</h2>
+            <p>Watch this short video to learn more about me!</p>
+
+            <div class="video-container">
+
+                <!-- =====================================================================
+                     SAMPLE VIDEO (Replace with YOUR video!)
+                     =====================================================================
+                     A sample video is included so you can see how it looks.
+                     You MUST replace this with YOUR OWN welcome video before submitting.
+                     
+                     You have 3 options for your own video:
+                     
+                     OPTION 1: YOUTUBE (RECOMMENDED - EASIEST)
+                     - Upload your video to YouTube
+                     - Click "Share" > "Embed" > Copy the iframe code
+                     - Replace the <video> tag below with your YouTube iframe
+                     - Example:
+                       <iframe width="560" height="315" 
+                               src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+                               title="Welcome Video" frameborder="0"
+                               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                               allowfullscreen>
+                       </iframe>
+                     
+                     OPTION 2: VIMEO
+                     - Upload to vimeo.com, get embed code
+                     - Replace the <video> tag below with Vimeo iframe
+                     
+                     OPTION 3: SELF-HOSTED (current setup)
+                     - Replace videos/sample-welcome.mp4 with YOUR video file
+                     - Provide BOTH MP4 and WebM for best browser compatibility
+                     ===================================================================== -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8R7jl4YRjoE?si=hMZugWIKiZCrICdn" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <!-- ^^^ REPLACE THIS with YOUR welcome video (YouTube, Vimeo, or your own file) -->
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================================================
+         HOBBIES SECTION
+         =============================================================================
+         REQUIRED (Part of 6 pts for Home Page):
+         - TWO hobby summaries with pictures
+         - Each hobby needs: name, image, brief description
+         
+         Later, on your ABOUT page, you'll expand these with detailed stories
+         Here, just give a preview/summary
+         
+         IMAGE REQUIREMENTS:
+         - 2 hobbies = 2 images minimum
+         - FILE FORMATS: .jpg (best for photos), .png (if transparency needed)
+         - SIZE: Around 800x600px or larger (will be resized by CSS)
+         - KEEP FILE SIZE: Under 500KB each (compress if needed)
+         
+         FILE NAMING: Be descriptive!
+         - Good: "sarah-photography-hobby.jpg", "john-hiking-mountains.jpg"
+         - Bad: "IMG_1234.jpg", "photo.jpg"
+         
+         TO REPLACE PLACEHOLDERS:
+         1. Choose 2 of YOUR hobbies/interests
+         2. Find or take photos representing each hobby
+         3. Save them in images/ folder
+         4. Update src attributes below
+         5. Write YOUR hobby names and descriptions
+         ============================================================================= -->
+    <section class="hobbies">
+        <div class="container">
+            <h2>My Hobbies</h2>
+            <div class="hobby-grid">
+
+                <!-- =================================================================
+                     HOBBY #1 - ACTION REQUIRED: Replace with YOUR first hobby
+                     ================================================================= -->
+                <div class="hobby-card">
+                    <!-- HOBBY IMAGE -->
+                    <img src="images/crosscountryskiinghobbyphoto1.jpg"
+                        alt="My skis propped up in the snow at Windsor Park in Winnipeg">
+                    <!-- ^^^ REPLACE:
+                         1. src= with your hobby image filename
+                         2. alt= with description of what the image shows
+                     -->
+
+                    <!-- HOBBY NAME -->
+                    <h3>Cross Country Skiing</h3>
+                    <!-- ^^^ REPLACE with your hobby name. Examples:
+                         "Photography", "Hiking", "Coding", "Cooking", "Gaming", etc.
+                     -->
+
+                    <!-- HOBBY SUMMARY (2-3 sentences) -->
+                    <p>
+                        Living in the north, you have to have something to keep you busy in the winter, and for
+                        me that's skiing!  I love it because it provides me with a community and a way to get out there
+                        even when it's cold out.
+
+                        <!-- EXAMPLE (DELETE and write your own):
+                             I've been passionate about photography for over 3 years, 
+                             specializing in landscape and nature photography. I love 
+                             capturing the beauty of Minnesota's wilderness areas.
+                         -->
+                    </p>
+                </div>
+
+                <!-- =================================================================
+                     HOBBY #2 - ACTION REQUIRED: Replace with YOUR second hobby
+                     ================================================================= -->
+                <div class="hobby-card">
+                    <img src="images/hikinghobbyphoto1.jpeg" alt="Picture I took while backpacking along Rayado Creek in New Mexico">
+
+                    <h3>Hiking</h3>
+
+                    <p>
+                        Hiking, and especially backpacking, has been a passion of mine for years.  I love going out on adventures
+                        into the mountains of places like New Mexico, Wyoming, and even the small mountains on the North Shore here in Minnesota!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================================================
+         CALL TO ACTION (CTA) SECTION
+         =============================================================================
+         Encourage visitors to explore more of your site
+         This creates a good user experience and improves navigation
+         ============================================================================= -->
+    <section class="cta">
+        <div class="container">
+            <h2>Want to Learn More?</h2>
+            <p>Explore my background, skills, and experiences</p>
+            <div class="cta-buttons">
+                <a href="about.html" class="btn btn-primary">About Me</a>
+                <a href="resume.html" class="btn btn-secondary">View Resume</a>
+            </div>
+            <!-- OPTIONAL: Customize these buttons or add more -->
+        </div>
+    </section>
+
+    <!-- =============================================================================
+         FOOTER
+         =============================================================================
+         Appears on every page - contains copyright and attribution
+         ============================================================================= -->
+    <footer>
+        <div class="container">
+            <!-- ACTION REQUIRED: Replace [YOUR NAME] -->
+            <p>&copy; 2026 Zachary Ťapajna. MIS 2201 - Spring 2026</p>
+            <p>University of Minnesota Duluth</p>
+            <!-- OPTIONAL: Add social media links, contact email, etc. -->
+        </div>
+    </footer>
+
+    <!-- =============================================================================
+         JAVASCRIPT
+         =============================================================================
+         Links to external JavaScript file for interactivity
+         - Handles mobile menu toggle
+         - Adds smooth scrolling
+         - Creates fade-in animations
+         ============================================================================= -->
+    <script src="js/script.js"></script>
+    <!-- The JavaScript is in an external file (js/script.js) - best practice! -->
+
+</body>
+
+</html>
+
+<!-- ==================================================================================
+     SUBMISSION CHECKLIST FOR index.html (Home Page)
+     ==================================================================================
+     
+     Before submitting, verify YOU HAVE:
+     ✓ Replaced [YOUR NAME] everywhere it appears
+     ✓ Written a professional introduction paragraph
+     ✓ Replaced headshot image with YOUR photo
+     ✓ Added YOUR welcome video (YouTube, Vimeo, or self-hosted)
+     ✓ Described YOUR two hobbies with images
+     ✓ Replaced ALL placeholder images with YOUR images
+     ✓ Updated all alt text for images
+     ✓ Tested page in browser (looks good on desktop AND mobile)
+     ✓ All links in navigation work
+     ✓ Video plays correctly
+     ✓ No "localhost" references (when you deploy)
+     
+     TESTING:
+     1. Open index.html in your browser
+     2. Click all navigation links (should work)
+     3. Check that all images load
+     4. Play the video
+     5. Test on your phone (responsive design)
+     
+     GRADING: This page is worth 6 points out of 22 total for Required Pages
+     
+     ================================================================================== -->
